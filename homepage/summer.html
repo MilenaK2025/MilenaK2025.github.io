@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Idiqlat:wght@200;300;400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Lily+Script+One&family=Playwrite+CA:wght@100..400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="background-color: #f7f1cd">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Beauty in Intricacy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Seasons
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="fall.html">Fall</a></li>
+                                <li><a class="dropdown-item" href="winter.html">Winter</a></li>
+                                <li><a class="dropdown-item" href="spring.html">Spring</a></li>
+                                <li><a class="dropdown-item" href="summer.html">Summer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="title">
+            <h1>Summer in New York</h1>
+        </div>
+
+        <div class="essay">
+            <p>This endeavor is made a bit easier with the onset of summer, where in New York, the atmosphere once again relaxes.
+                School is out; summer vacation begins; the weather becomes warmer; and spirits increase exponentially.
+                Yet for me–and perhaps many others–summer brings a time of loneliness.
+                However, what is so great about summer is that you have so much time to simply explore, to distract yourself from the fact that you are lonely.
+                Enjoy sunset walks and solo beach days on Coney Island, bike rides along Rockaway, and even just getting some ice cream from your local Carvel.
+                Watching runners panting along the boardwalk, girls walking their dogs in happy chatter, and hearing the laughter of children all ground you, reminding you that you are not alone.
+                New York supports you, a New Yorker, in any way you find it can.</p>
+        </div>
+
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    <img class="image" id="mainImage" alt="Summer in New York" src="Summer1.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container d-flex justify-content-center">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">1</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">2</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">3</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio4">4</label>
+            </div>
+        </div>
+        <p class="endpage">༶•┈┈┈┈┈┈୨♡୧┈┈┈┈┈•༶</p>
+
+        <script>
+            const mainImage = document.getElementById("mainImage");
+
+            document.getElementById("btnradio1").addEventListener("change", function() {
+                mainImage.src = "Summer1.jpg";
+            });
+
+            document.getElementById("btnradio2").addEventListener("change", function() {
+                mainImage.src = "Summer2.webp";
+            });
+
+            document.getElementById("btnradio3").addEventListener("change", function() {
+                mainImage.src = "Summer3.jpg";
+            });
+
+            document.getElementById("btnradio4").addEventListener("change", function() {
+                mainImage.src = "Summer4.jpg";
+            });
+
+            window.onload = function() {
+                document.querySelector(".col").style.opacity = 1;
+            };
+        </script>
+    </body>
+
+</html>
